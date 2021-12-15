@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/violetbackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            app:layout_constraintBottom_toTopOf="@id/tv_addevent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_addevent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_horizontal"
+            android:text="Ajouter un événement"
+            android:textColor="@color/colorTextTitle"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@id/NameEventText"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/NameEventText"
+            app:layout_constraintTop_toBottomOf="@id/tv_addevent"
+            app:layout_constraintBottom_toTopOf="@id/NameOrgaText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="34dp"
+            android:gravity="left"
+            android:hint="Nom de l'événement"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/NameOrgaText"
+            app:layout_constraintTop_toBottomOf="@id/NameEventText"
+            app:layout_constraintBottom_toTopOf="@id/DateEventText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="left"
+            android:hint="Nom de l'organisateur"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/DateEventText"
+            app:layout_constraintTop_toBottomOf="@id/NameOrgaText"
+            app:layout_constraintBottom_toTopOf="@id/PrixEventText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="left"
+            android:hint="Date de l'événement"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/PrixEventText"
+            app:layout_constraintTop_toBottomOf="@id/DateEventText"
+            app:layout_constraintBottom_toTopOf="@id/AddImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="left"
+            android:hint="Prix de l'événement"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/AddImageButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/violetbackground"
+            android:fontFamily="sans-serif-light"
+            android:padding="10dp"
+            android:text="Cliquez ici pour sélectionner une photo"
+            android:textAllCaps="false"
+            android:textColor="@color/followers"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/PrixEventText"
+            app:layout_constraintBottom_toTopOf="@id/AddEventButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/AddEventButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="280dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_blue_button"
+            android:fontFamily="sans-serif-light"
+            android:text="Ajouter l'événement"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/AddImageButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="3dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_event_v2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/land3"/>
+
+            <ImageView
+                android:id="@+id/shadow_bottom_v2"
+                android:src="@drawable/bottom_shadow_v2"
+                android:layout_alignBottom="@id/img_event_v2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:alpha="0.5" />
+
+            <TextView
+                android:id="@+id/tv_nom_evenement_v2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/shadow_bottom_v2"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Nom de l'événement"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/affichage_organisé_par_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_nom_evenement_v2"
+                android:text="Organisé par"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="-5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_nom_organisateur_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom de l'orga"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_toRightOf="@id/affichage_organisé_par_v2"
+                android:layout_below="@id/tv_nom_evenement_v2"
+                android:layout_marginTop="-5dp"
+                android:layout_marginLeft="3dp"
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_date_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_nom_evenement_v2"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="-7dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="vendredi 11 mai"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

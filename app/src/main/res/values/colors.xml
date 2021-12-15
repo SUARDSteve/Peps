@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="light_grey">#e4e4e4</color>
+    <color name="grey">#8b8b8b</color>
+    <color name="dark_grey">#696969</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimary">#ea474a</color>
+    <color name="colorPrimaryDark">#cf2a2d</color>
+    <color name="colorAccent">#1e344b</color>
+
+    <color name="colorBackground">#f9f9fa</color>
+    <color name="colorTextSubtitle">#4e4e4e</color>
+    <color name="colorTextTitle">#262626</color>
+
+    <color name="adress">#2F7092</color>
+    <color name="followers">#0D5D98</color>
+    <color name="headings">#3797CF</color>
+    <color name="solidCircle">#AAFFFFFF</color>
+    <color name="circleBorder">#50FFFFFF</color>
+    <color name="gradEnd">#67EFC8</color>
+    <color name="gradStart">#63C9FF</color>
+    <color name="followersBg">#e56565</color>
+    <color name="followingBg">#ff4949</color>
+    <color name="grey2">#E5E5E5</color>
+
+    //shades of purple
+
+    <color name="violet0">#E6E6FA</color>
+    <color name="violet1">#D8BFd8</color>
+    <color name="violet2">#DDA0DD</color>
+    <color name="violet3">#EE82EE</color>
+    <color name="violet4">#FF00FF</color>
+    <color name="violet5">#BA55D3</color>
+    <color name="violet6">#9370DB</color>
+    <color name="violet7">#8A2BE2</color>
+    <color name="violet8">#9400D3</color>
+    <color name="violet9">#9932CC</color>
+    <color name="violet10">#800080</color>
+    <color name="violet11">#4B0082</color>
+    <color name="violetbackground">#fbf7f5</color>
+
+    //shades of blue
+
+    <color name="bleu1">#95C8D8</color>
+    <color name="bleu2">#89CFF0</color>
+    <color name="bleu3">#57A0D3</color>
+    <color name="bleu4">#73C2FB</color>
+    <color name="bleu5">#6593F5</color>
+    <color name="bleu6">#0080FF</color>
+    <color name="bleu7">#000080</color>
+    <color name="bleu8">#111E6C</color>
+    <color name="bleu9">#B0DFE5</color>
+    <color name="bleu10">#0F52BA</color>
+    <color name="bleu11">#003152</color>
+
+
+</resources>

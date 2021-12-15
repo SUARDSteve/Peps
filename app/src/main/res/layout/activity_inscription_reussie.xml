@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inscription réalisée avec succès"
+        android:textSize="28sp"
+        android:gravity="center_horizontal"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/colorTextTitle"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/commencer_btn"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/blue_rectangle_button"
+        android:fontFamily="sans-serif-light"
+        android:padding="10dp"
+        android:text="Commencer à chercher des événements"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
